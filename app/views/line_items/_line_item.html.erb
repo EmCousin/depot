@@ -1,0 +1,15 @@
+<!-- This is a PARTIAL file. Its name is '_line_item.html.erb', so the expected variable name is 'line_item' -->
+<% if line_item == @current_item %>
+	<tr id="current_item">
+<% else %>
+	<tr>
+<% end %>
+		<td>ID#<%= line_item.product.id %></td>
+		<td><%= line_item.quantity %>&times;</td>
+		<td><%= line_item.product.title %></td>
+		<!--<td class="item_price"><%= number_to_currency(line_item.product.price) %></td>-->
+		<td class="item_price"><%= number_to_currency(line_item.total_price) %></td>
+		<td><%= button_to '+1', line_items_increment_path(product_id: line_item.product.id), remote: true %></td>
+		<td><%= button_to '-1', line_items_decrement_path(product_id: line_item.product.id), remote: true %></td>
+		<td><%= button_to 'Remove', line_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	</tr>

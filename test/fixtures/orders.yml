@@ -1,0 +1,30 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  address: 123 The Street
+  email: dave@example.com
+  name: Dave Thomas
+  pay_type: Check
+  ship_date: 17-04-2015
+
+two:
+  id: 2
+  name: Emmanuel Cousin
+  address: Mon addresse
+  email: emmanuel_cousin@hotmail.fr
+  pay_type: Credit card
+
+three:
+  id: 3
+  name: Caroline Cousin
+  address: Son adresse
+  email: carolinecousin@gmail.com
+  pay_type: Purchase Order
+
+four:
+  id: 4
+  name: Maman
+  address: Son adresse
+  email: maman@gmail.com
+  pay_type: Purchase Order
